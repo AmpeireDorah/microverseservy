@@ -7,14 +7,45 @@
   </head>
 
   <body>
-    <p>Hello world, We are software developers</p>
+    <!--<p>Hello world, We are software developers</p>-->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header><h1 id="title">Survey Form </h1></header>
+    <header><center><h1 id="title">Survey Form </h1></center></header>
    <p id="description">Let us know how we can improve freeCodeCamp</p>
    <form id="survey-form">
-     <lebel id="name">Name: <input type= "text" id="name" placeholder="Enter Your Name" name="Name"> </lebel><br>
-     <lebel id="email">Email: <input type= "email" id="email" placeholder="Enter Your Email"name="Email"></lebel><br>
-     <lebel id="age">Age:     <input name="Age" type= "number" id="number" min="1" max="125" placeholder="Enter Your Age"></lebel><br>
+     <label for="name" id="name-label">Name: <input class="me" type= "text" required="" id="name" placeholder="Enter Your Name" name="Name"> </label><br>
+     <label for="email" id="email-label">Email: <input class="me" type= "email" required="" id="email" placeholder="Enter Your Email"name="Email"></label><br>
+     <label for="age" id="number-label">Age:     <input class="me" name="Age" required="" type= "number" id="number" min="1" max="125" placeholder="Enter Your Age"></label><br>
+     <label>Which option best describes your current role?</label>
+     <select id="dropdown"><option>Student</option>
+     	<option>Full Time Job</option>
+     	<option>Full Time Learner</option>
+     	<option>Prefer Not To Say</option>
+     	<option>Other</option></select><br>
+     	<label>How likely is that you would recommend freeCodeCamp to a friend?</label><input type="radio" value="def" name="group">Definitely<br>
+     	<input type="radio" value="Maybe" name="group">Maybe<br>
+     	<input type="radio" value="Not Sure" name="group">Not Sure<br>
+
+     	<label>What do you like most in FCC:</label><select>
+     		<option>Challenges</option>
+     		<option>Community</option>
+     		<option>Open Source</option>
+     		<option>Project</option>
+     	</select><br>
+     	<label>Things that should be improved in the future
+(Check all that apply):</label>
+     <input type="checkbox" name="" value="check">Front-End Projects<br>
+     <input type="checkbox" name="" value="check">Back=End Projects<br>
+     <input type="checkbox" name="" value="check">Data Visualization<br>
+     <input type="checkbox" name="" value="check">Challenges<br>
+     <input type="checkbox" name="" value="check">Open Source Community<br>
+     <input type="checkbox" name="" value="check">Videos<br>
+     <input type="checkbox" name="" value="check">City Meetups<br>
+     <input type="checkbox" name="" value="check">Forum<br>
+     <input type="checkbox" name="" value="check">Wiki<br>
+     <input type="checkbox" name="" value="check">Additional Courses<br>
+   
+   <label>Any Comments or Suggestions? <br> </label><textarea></textarea><br>
+   <button id="submit">Submit</button>
    </form>
     <!--
 
