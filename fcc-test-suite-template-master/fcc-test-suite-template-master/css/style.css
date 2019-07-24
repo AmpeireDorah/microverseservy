@@ -1,5 +1,7 @@
 body{
 	background-color: aquamarine;
+	text-align: center;
+    min-width: 300px;
  
 }
 form{
