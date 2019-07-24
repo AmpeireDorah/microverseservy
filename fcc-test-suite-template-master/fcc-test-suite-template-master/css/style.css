@@ -14,3 +14,14 @@ form{
 	margin-bottom: 10px;
 	padding-left: 10px;
 }
+
+#description{
+
+	margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
